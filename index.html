@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App Atrápalo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+	<style type="text/css" >
+		
+	</style>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<div id="toolbar">
+	</div>
+	<!-- templates -->
+	<script type="text/template" id="history-section">
+			<div class="item undo gray"><a href="javascript:void(0);"><i class="fa fa-undo"></i></a></div>
+			<div class="item redo gray"><a href="javascript:void(0);"><i class="fa fa-redo"></i></a></div>
+	</script>
+	<script type="text/template" id="color-section">
+			<div class="item black"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item white"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item red"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item orange"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item yellow"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item green"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item blue"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+			<div class="item purple"><a href="javascript:void(0);"><i class="fa fa-check"></i></a></div>
+	</script>
+	<script type="text/template" id="stroke-section">
+			<div class="item stroke thin"><a href="javascript:void(0);"><i></i></a></div>
+			<div class="item stroke medium"><a href="javascript:void(0);"><i></i></a></div>
+			<div class="item stroke thick"><a href="javascript:void(0);"><i></i></a></div>
+	</script>
+	<script src="dist/app.js"></script>
+</body>
+</html>

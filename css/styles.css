@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#canvas {
+	display: block;
+}
+
+#toolbar{
+    position: absolute;
+    margin: 5px;
+    /*padding: 5px;*/
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /*background: rgba(0,0,0, 0.1);*/
+}
+
+#toolbar .section {
+	display: flex;
+	flex-direction: row;
+}
+
+.section .item{
+	width: 10vh;
+	position: relative;
+}
+
+.section .item a {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*background: red;*/
+	margin: 0 2px;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	color: white;
+	text-decoration: none;
+}
+
+
+.section .item  i{
+	display: inline-block;
+}
+
+.section .item i.fa-check{
+	display:none;
+}
+.section .item.selected  i.fa-check{
+	display:inline-block;
+}
+
+.black a{
+	background: black;
+}
+.section .white a{
+	background: white;
+	border: 1px solid #aaa;
+}
+.section .white.selected a i{
+	color: black;
+}
+.red a{
+	background: red;
+}
+.orange a{
+	background: orange;
+}
+.yellow a{
+	background: yellow;
+}
+.green a{
+	background: green;
+}
+.pink a{
+	background: pink;
+}
+.blue a{
+	background: blue;
+}
+.purple a{
+	background: purple;
+}
+.gray a{
+	background: #ccc;
+	cursor: default;
+	color: #666;
+}
+.stroke a{
+	background: #ccc;
+}
+.stroke.selected a{
+	background: black;
+}
+
+.stroke a i{
+	display: inline-block;
+    width: 50%;
+    background: white;
+}
+
+.stroke.thin a i{
+	height: 2px;
+    border-radius: 2px;
+}
+.stroke.medium a i{
+	height: 5px;
+    border-radius: 3px;
+}
+.stroke.thick a i{
+	height: 10px;
+    border-radius: 5px;
+}
+
+#history-section .item.active a{
+	cursor: pointer;
+	background: gray;
+	color: white;
+}
+
+@media screen and (orientation:portrait) {
+	#toolbar{
+		top:0;
+	    bottom: 0;
+	    right: 0;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: stretch;
+	    /*background: rgba(0,0,0, 0.1);*/
+	    min-width: 10vw;
+	    overflow-y: auto;
+	}
+	#toolbar .section {
+		flex-direction: column;
+	}
+	.section .item{
+		margin: 2px 0;
+		width: 10vw;
+		padding-top: 100%;
+	}
+}
+
+@media screen and (orientation:landscape) {
+	#toolbar{
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-items: stretch;
+	    /*background: rgba(0,0,0, 0.1);*/
+	    min-height: 10vh;
+	    overflow-x: auto;
+	}
+	#toolbar .section {
+		flex-direction: row;
+	}
+	.section .item{
+		margin: 0 2px;
+		width: 10vh;
+	}
+}
